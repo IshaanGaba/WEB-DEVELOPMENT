@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f3f17a;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px dotted purple;
+            background-color: rgb(214, 239, 239);
+            margin: 33px auto;
+        }
+
+        .item {
+            border: 3px solid black;
+            border-radius: 30px;
+            padding: 12px 3px;
+            margin: 12px 3px;
+            background: #ead4eb;
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 40%;
+        }
+        h1{
+            padding: 20px 19px;
+            margin:23px auto;
+            width: 250px;
+        }
+
+        #stationary {
+            /* float: left; */
+            width: 98%;
+            clear: both;
+        }
+
+        p,h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WELCOME</h1>
+        <div id="fruit" class="item">
+            <h3>fruits</h3>
+            <p id="fruits" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum maiores ipsa
+                delectus! Inventore ullam quos perferendis, vel ea nesciunt sapiente odit facilis necessitatibus tempora
+                ratione dolores non adipisci est cumque mollitia sit illum.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computers" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum maiores
+                ipsa delectus! Inventore ullam quos perferendis, vel ea nesciunt sapiente odit facilis necessitatibus
+                tempora ratione dolores non adipisci est cumque mollitia sit illum. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Minus iure, eveniet aperiam qui voluptas corrupti alias, temporibus dicta
+                ea quisquam, eaque voluptatibus expedita consequatur architecto blanditiis voluptate dolores in
+                excepturi. Doloremque, quia ipsum optio assumenda libero, hic tempora asperiores, exercitationem error
+                consequatur officiis accusamus omnis sunt. Sint placeat ut aspernatur.</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationars" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsum maiores
+                ipsa delectus! Inventore ullam quos perferendis, vel ea nesciunt sapiente odit facilis necessitatibus
+                tempora ratione dolores non adipisci est cumque mollitia sit illum.</p>
+        </div>
+    </div>
+</body>
+
+</html>

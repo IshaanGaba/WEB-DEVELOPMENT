@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms and inputs</title>
+</head>
+
+<body>
+    <form action="back.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            roll: <input type="number" name="myroll">
+        </div>
+        <br>
+        <div>
+            date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            time: <input type="time" name="mytime">
+        </div>
+        <br>
+        <label for="eligible">eligible</label>
+        <div>
+            <input type="checkbox" name="eligible" id="eligible">
+        </div>
+        <br>
+        <div>
+            gender: male<input type="radio" name="gender" checked> 
+            female<input type="radio" name="gender">
+        </div>
+        <br>
+        <div>
+            write:<br> <textarea name="mytext"  cols="10" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="thank">Thanks</label>
+            <select name="Mythank" id="thank">
+                <option value="y">Yes</option>
+                <option value="n" selected>no</option>
+            </select>
+        </div>
+        
+        <br>
+        <div>
+            submit: <input type="submit" value="Submit">
+            reset: <input type="reset" value="reset">
+        </div>
+
+    </form>
+
+</body>
+
+</html>
