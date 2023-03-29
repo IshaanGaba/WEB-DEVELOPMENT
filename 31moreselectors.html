@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        p{
+            background-color: black;
+            color: cyan;
+            font-weight: bold;
+        }
+        div p{ /*p is contained under div*/
+            background-color: black;
+            color: aliceblue;
+            font-weight: bold;
+        }
+        div li p{ /*p is contained under li which is contained under div*/
+            background-color: black;
+            color: yellow;
+            font-weight: bold;
+        }
+        div > p{ /*p is right inside or is a child of div  */
+            background-color: black;
+            color: red;
+            font-weight: bold;
+        }
+        div + p{ /*p is next sibling of or right after div*/
+            background-color: black;
+            color: green;
+            font-weight: bold;
+        } 
+
+    </style>
+</head>
+<body>
+    <p>6th para</p>
+    <div class="container">
+        <div class="box">
+          
+            <ul>
+                <li><p>1st para</p></li>
+                <li>this is not</li>
+                <p>2nd para</p>
+            </ul>
+            <p>3rd para</p>
+        </div>
+        <p>4th para</p>
+    </div>
+    <p>5th para</p>
+</body>
+</html>
