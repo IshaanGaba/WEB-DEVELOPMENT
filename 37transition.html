@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Creating Transitions </title>
+    <style>
+        h3{
+            transition: all 2s ease-in-out 0.3s;
+
+        }
+        .item{
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+            transition-property: background-color;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out;
+            transition: all 2s ease-in-out 0.3s;
+        }
+        .item:hover{
+            background-color: yellowgreen;
+            color: darkblue;
+            font-size: large;
+            
+        }
+        h3:hover{
+            color: darkblue;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>Welcome</h3>
+    <div class="item">
+        This is item
+    </div>
+</body>
+</html>

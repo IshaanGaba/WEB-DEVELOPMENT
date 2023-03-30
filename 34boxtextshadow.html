@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+
+        }
+        .item{
+            background-color: cyan;
+            color: black;
+            margin: 23px 23px;
+            padding: 23px 23px;
+            border: 2px black solid;
+
+            box-shadow: 4px 4px red;/* lower side of box*/
+            box-shadow: -4px -4px red;/* upper side of box*/
+            box-shadow: 4px 4px 10px red;/* lower side with blurr radius of box*/
+            box-shadow: 4px 4px 10px 5px red;/* lower side with blurr and spread radius of box*/
+            box-shadow: inset 4px 4px 10px 5px red;/* inside with blurr and spread radius of box*/
+            box-shadow: 4px 4px 10px 5px red,-4px -4px 10px 5px green;/*multiple shadows*/
+            /* upper and lower side with blurr and spread radius of box*/
+
+        }
+        p{
+            color: rgba(1, 125, 248, 0.9);
+        }
+        h1{
+            text-shadow: 2px 1px violet;
+            text-shadow: 3px 4px -3px violet;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item1">
+            <h1>this is Card1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus in alias id maxime!</p>
+        </div>
+        <div class="item" id="item2">
+            <h1>this is Card2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus in alias id maxime!</p>
+        </div>
+        <div class="item" id="item3">
+            <h1>this is Card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem necessitatibus in alias id maxime!</p>
+        </div>
+    </div>
+</body>
+</html>
