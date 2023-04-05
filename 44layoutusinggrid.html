@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid:layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 2rem;
+            grid-template-areas: 'navbar navbar navbar navbar' 'section section aside aside''footer footer footer footer';
+
+        }
+        .item{
+            background-color: aqua;
+            border: 4px solid red;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+        
+        <div id="navbar" class="item">
+            Home About Contact Us
+        </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, quam. Suscipit cumque asperiores, quam dolor mollitia neque quisquam? Fugiat facere quibusdam ab dolore dicta!
+        </div>
+        <div id="aside" class="item">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore officiis qui dolorum, ex asperiores eos laudantium blanditiis laboriosam cum repellat nihil placeat, libero aperiam error provident! Voluptate nam quibusdam veritatis quas nulla accusantium sapiente?
+        </div>
+        <div id="footer" class="item">
+            Lorem ipsum dolor sit amet.
+        </div>
+    </div>
+    </body>
+    </html>
