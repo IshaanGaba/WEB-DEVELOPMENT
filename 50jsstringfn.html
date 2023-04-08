@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String function in js</title>
+</head>
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur debitis exercitationem numquam fugit veritatis minus iste recusandae, eos perspiciatis animi culpa repellendus temporibus quod saepe excepturi nulla fugiat ut eligendi quia suscipit in tempore illo laboriosam rem? Cupiditate odio minus praesentium veniam.</p>
+    </div>
+    <script>
+        var str ='THIS ishs ishaan';
+        console.log(str);
+        var position=str.indexOf('is');
+        console.log(position);
+        var position=str.lastIndexOf('is');
+        console.log(position);
+        var substr=str.slice(1,7);
+        <!-- substr=str.slice(-1,-2); -ve no result why?? -->
+        console.log(substr);
+        substr=str.substring(1,6);
+        console.log(substr);
+        var s=str.substr(5,6);
+        console.log(s);
+        r=str.replace("ishaan","srting");
+        console.log(r);
+        console.log(str.toLowerCase());
+        console.log(str.toUpperCase());
+        nesww=str.concat(" thx");
+        console.log(nesww);
+        str1="   this is    ishaan   ";
+        console.log(str1.trim());
+        char1=str.charAt(2);
+        console.log(char1);
+        char1=str.charCodeAt(2);
+        console.log(char1);
+        console.log(str[2]);
+        console.log(str[6]);
+        console.log(str[5]);
+    </script>
+</body>
+</html>
