@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope If-else,Switch</title>
+</head>
+<body>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui molestiae numquam nulla, unde eius voluptatem tempora asperiores autem eos provident doloribus veniam, alias id!</p>
+    </div>
+    <script>
+        var s="i m ishaan";
+        console.log(s);
+        var s="i m ishaan1";
+        console.log(s);
+        let p="i m ishaan";
+        console.log(p);
+        //let p="hi";
+        p="hi"
+        console.log(p);
+        const b=5;
+        console.log(b);
+        /*b=6; 
+        console.log(b);*/
+        let a=5;
+        {
+            let a=6;
+            console.log(a);
+        }
+        console.log(a);
+        let c=3;
+        if(c>6){
+            console.log("true");
+        }        
+        else if(c==6){
+            console.log("t");
+        }
+        else{
+            console.log("f");
+        }
+        let d=5;
+        switch(d){
+            case(3):
+                console.log("t1");
+                break;
+            case 4:
+                console.log("f");
+                break;
+            default:
+                console.log("t2");
+                break;
+
+        }
+    </script>
+</body>
+</html>
