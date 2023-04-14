@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects in Js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>hi</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, recusandae.</p>
+
+    </div>
+    <script>
+        let a=undefined;
+        console.log(a);
+        let b={
+            name:"ishaan",
+            salary:10,
+            "sal 1":'hi'
+        }
+        console.log(b);
+        console.log(b.name);
+        console.log(b['name']);
+        console.log(b['sal 1']);
+        //console.log(b."sal 1"); error
+        console.log(b.salary);
+        
+        let d=[100,20,true,'ishaan'];
+        console.log(d);
+        console.log(d.length);
+        d.push("hi");//push at end only
+        d.push(undefined);//push at end only
+        console.log(d);
+        d.pop();// pop --> only last element
+        console.log(d);
+        
+        console.log("----------------------");
+        let x=[20,30,10,5];
+        console.log(x);
+        x=x.sort();//not the nice sorting see above eg
+        console.log(x);
+        console.log(x[2]);
+        console.log(x[5]);//not an error-->undefined is displayed
+        console.log(x[1]);
+        
+        let name=new Array(10,20,'ishaan',undefined);
+        console.log(name);
+
+        let m=new Array(20);
+        console.log(m);
+        console.log(m[5]);
+    </script>
+</body>
+</html>

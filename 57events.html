@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and Listening to events in Js</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Hi</h1>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nobis provident tenetur beatae rem eaque! Repudiandae voluptatem voluptatibus aliquid dolorem ipsum blanditiis incidunt, distinctio accusantium sed, nam rem? Aut eligendi voluptates, eveniet delectus unde officia optio possimus obcaecati libero quia, deserunt rerum! Alias, maxime?
+        </p>
+    </div>
+    <div>
+        <button id="btn" onclick="Hide()">Show/Hide</button>
+    </div>
+    <script>
+        
+        para.addEventListener('mouseover',function run(){
+            //alert('Mouse inside');
+            console.log('Mouse inside');
+        });
+        para.addEventListener('mouseout',function run(){
+            //alert('Mouse out');
+            console.log('Mouse out');
+        });
+        function Hide(){
+        //let para=document.getElementById('para');
+        //let btn=document.getElementById('btn');
+        if(para.style.display!='none'){
+        para.style.display='none';
+        
+    }
+    else{
+            para.style.display='block';
+
+        }
+    }
+    </script>
+</body>
+</html>

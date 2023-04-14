@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigating the DOM in JS</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <nav id="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, quasi.
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quibusdam totam ducimus tempora quas.
+    </div>
+
+    <script>
+        //id
+        let main=document.getElementById('main');
+        console.log(main);
+        let nav=document.getElementById('navbar');
+        console.log(nav);
+
+        //class
+        let sel=document.getElementsByClassName('container');
+        console.log(sel);
+        
+        //selectors
+        let sels=document.querySelector('.container');
+        console.log(sels);
+
+        let ses=document.querySelectorAll('.container');
+        console.log(ses);
+        let ss=document.querySelectorAll('#navbar>ul>li');
+        console.log(ss);
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop in Js</title>
+</head>
+<body>
+    <div>
+        this is conatiner
+    </div>
+    <script>
+        for(let i=0;i<5;i++){
+            console.log(i);
+        }
+        let fi=["hi","hello","bye","sad","dad"];
+        for(let i=0;i<fi.length;i++){
+            console.log(fi[i]);
+        }
+
+        fi.forEach(function f(Element)
+        {
+            console.log("h "+Element);
+        });//imp error
+
+        for(i of fi){
+            console.log("hii "+i)
+        }
+        
+        //for objects
+        let e={
+            name:"hi",
+            sal:20,
+            channel:"hii"
+        }
+        for(key in e){
+            console.log(`the ${key} is the pair of ${e[key]}`)
+        }
+
+        //while
+        let z=0;
+        while(z<4){
+            console.log(z);
+            z++;
+        }
+
+        /*always runs the first time*/
+        let y=34;
+        do{
+            console.log(y);
+            y++;
+        }while(y<4);
+
+    </script>
+</body>
+</html>
