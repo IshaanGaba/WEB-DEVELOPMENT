@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function in Js</title>
+</head>
+<body>
+    <div>hi</div>
+ <script>
+    /*function greet(){
+        console.log('hi');
+    }*/
+
+    //or using arrow fn
+    let greet=()=>{console.log("hello");}
+    greet();
+
+    setTimeout(()=>{console.log("hi")},3000);
+
+    let sum=(a,b)=>{return (a+b)};
+    let s=sum(5,4);
+    console.log(s);
+
+    let half=a=>{console.log(a/2)};//no bracket required
+    half(60);
+
+    //IMP
+    let greet1=()=>console.log("hahaha");
+    greet1();
+
+    //for objects IMP
+    let obj={
+        greet:'hahaha hi',
+        name:['is','ha','an'],
+        speak(){
+            this.name.forEach((std)=>{//with arrow fn
+                console.log("hi "+std);
+                console.log(this.greet+" "+std)//lexical this-->parent this
+            });
+        }
+    }
+    obj.speak();
+
+    let obj1={//IMP remember
+        greet:'hahaha hi',
+        name:['is','ha','an'],
+        speak(){
+            this.name.forEach(function s(std){//without arrow fn
+                console.log("hi "+std);
+                console.log(this.greet+" "+std)//this-->undefined
+            });
+        }
+    }
+    obj1.speak();
+ </script>   
+</body>
+
+</html>

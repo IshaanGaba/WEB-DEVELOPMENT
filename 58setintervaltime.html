@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set interval and set time out in JS</title>
+</head>
+<body>
+    <div>
+        time now is <span id="t"></span>
+    </div>
+    <script>
+        //function to display date and time on website
+        function display(){
+            time=new Date();
+        //    console.log(time);
+            document.getElementById('t').innerHTML=time;
+        }
+        setInterval(display,1000);
+
+
+        function greet(name,bye){
+            console.log("Hello "+name+" "+bye)
+        }
+        
+        //setTimeout
+        let times=setTimeout(greet,5000,'Ishaan','haha');//5sec
+        //setTimeout(greet(),5000,'Ishaan','haha');-->() not allowed        
+        console.log(times);
+        clearTimeout(times);//not executed ek baar bhi nhi
+        
+        //setInterval
+        let id=setInterval(greet,1000,'Ishaan','haha');//5sec
+        console.log(id);
+        clearInterval(id);//not executed ek baar bhi nhi
+
+    </script>
+</body>
+</html>

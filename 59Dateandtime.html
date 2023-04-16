@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time in Js</title>
+</head>
+<body>
+    <div class="con">
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        // date and time
+        function display(){
+            //let time=new Date();
+            document.getElementById('time').innerHTML=new Date();
+        }
+        setInterval(display,1000);
+
+        let n=new Date();
+        console.log(n);
+        
+        let n1=new Date(0);//reference date
+        console.log(n1);
+        
+        let n2=new Date(10);//10msec forward
+        console.log(n2);
+
+        let n3=new Date(1000);//1sec forward
+        console.log(n3);
+        
+        let n4=new Date("2019-09-20");//setting new date
+        console.log(n4);
+        
+        //new Date(yr,mon,date,hrs,min,sec,ms)0-jan;11-dec
+        let n5=new Date(2030,11,20,6,9,2,3);//setting new date
+        console.log(n5);
+        
+        let n6=new Date();
+        console.log(n6); 
+        let y=n6.getFullYear();
+        console.log(y);
+        let m=n6.getMilliseconds();
+        console.log(m);
+        let h=n6.getDay();//6-saturday
+        console.log(h);
+        let g=n6.getDate();
+        console.log(g);
+
+        let d=n6.setDate(5);
+        console.log(d);
+
+    </script>
+</body>
+</html>
