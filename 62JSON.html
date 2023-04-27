@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON-JavaScript Object Notation</title>
+</head>
+<body>
+    <div>hi</div>
+    <script>
+        let jobj={
+            name:'ishaan',
+            say:'hi',
+            hello:'say12'
+        }
+        console.log(jobj);
+
+        let myj=JSON.stringify(jobj);//converted into string
+        console.log(myj);
+        myj=myj.replace('ishaan','Ishaan');
+        console.log(myj);
+
+        let newj=JSON.parse(myj);//converted into obj-->takes only a valid JSON string
+        console.log(newj);
+
+        let a=5;//for number
+        console.log(a);
+        let newa=JSON.stringify(a);
+        console.log(newa);
+        console.log(typeof(newa));
+        console.log(typeof(a));
+        let n=JSON.parse(newa);
+        console.log(n);
+        console.log(typeof(n));
+
+        
+
+    </script>
+</body>
+</html>
