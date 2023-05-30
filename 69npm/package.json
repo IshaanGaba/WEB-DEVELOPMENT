@@ -1,0 +1,14 @@
+{
+  "name": "69npm",
+  "version": "1.0.0",
+  "description": "this is my first npm",
+  "main": "69npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yes"
+  ],
+  "author": "ishaan",
+  "license": "ISC"
+}
