@@ -1,0 +1,33 @@
+extends base.pug
+
+block style 
+    style 
+        include ../static/style.css 
+
+block content
+    section#introsection 
+            h1 MOVE IT! DANCE ACADEMY 
+            h3 Dance is the hidden language of the soul.
+            a(href='/') Join Us Now
+    section#mission 
+        h1 Our Mission
+        div.cards 
+            h2  Dance Prefection 
+            div.img1    
+                img(src="../static/111.jpg")
+        div.cards 
+            h2   Lets Move It!
+            div.img2    
+                img(src="../static/2.jpg")
+        div.cards 
+            h2  Expert Teaching 
+            div.img3    
+                img(src="../static/31.png")
+    section#sponsors 
+        h1 Our Sponsors
+        div.simg
+            img(src="../static/l1.jpg", alt="Sponsors img")
+            img(src="../static/l2.jpg", alt="Sponsors img")
+            img(src="../static/l3.jpg", alt="Sponsors img")
+            img(src="../static/l4.jpg", alt="Sponsors img")
+            img(src="../static/l5.jpg", alt="Sponsors img")

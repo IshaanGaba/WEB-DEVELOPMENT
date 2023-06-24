@@ -1,0 +1,36 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.h{
+    text-align: center;
+    margin: 23px auto;
+}
+.container{
+    min-height: 83vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.btn{
+    margin-top: 23px;
+    padding: 15px;
+    border: 2px solid red;
+    border-radius: 5px;
+    background-color: black;
+    color: wheat;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: bold;
+}
